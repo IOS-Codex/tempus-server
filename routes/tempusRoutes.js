@@ -2,14 +2,15 @@ const { Router } = require("express")
 const express = require("express")
 
 //controllers
-const { getCurrentTime } = require("../controllers/tempusControllers")
+const { getData } = require("../controllers/tempusControllers")
 
 //create Router
 const router = express.Router()
 
 
-//get current time
-router.get("/getCurrentTime", getCurrentTime)
+//get  all data
+router.get("/getData", getData)
+
 
 
 module.exports = router
